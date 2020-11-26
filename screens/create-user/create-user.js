@@ -15,7 +15,7 @@ function CreateUser ({navigation}) {
 
 const createuser =   async ()=>{  
     try{
-        const response =  await fetch ( '192.168.1.18:5000' , { 
+        const response =  await fetch ( '192.168.1.18:4000'/createCitas , { 
             method : 'POST' , 
             headers : { 
             Acept : 'application / json' , 
