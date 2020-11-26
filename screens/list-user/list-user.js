@@ -8,7 +8,7 @@ function listuser(){
     const isFocused = useIsFocused();
     const [users,setUsers] = useState([]);
     const getUsers = async ()=>{
-        let response  = await fetch('192.168.1.18:5000');
+        let response  = await fetch('192.168.1.18:4000'/listCitas);
         let json = await response.json();
         setUsers(json.users);
     }
