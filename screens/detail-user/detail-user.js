@@ -8,7 +8,7 @@ function DetailUser ({route,navigation}){
     const {name,lastname,identification,birthdate,city, neighborhood,telephone } = route.params.user;
     const deleteCita = async () =>{
         try{
-            const response =    await fetch ( '192.168.1.18:4000' , { 
+            const response =    await fetch ( '192.168.1.18:4000'/detailCitas , { 
                 method : 'DELETE' , 
                 headers : { 
                 Acept : 'application / json' , 
