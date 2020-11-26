@@ -14,9 +14,9 @@ function UpdateUser({route, navigation}){
     const [neighborhood, setneighborhood] = useState("");
     const [telephone, settelephone] = useState();
 
-const updateCita =   async ()=>{
+const updateuser =   async ()=>{
     try{
-        const response =  await fetch ( '192.168.1.18:4000'/updateCita , { 
+        const response =  await fetch ( '192.168.1.18:5000' , { 
             method : 'PUT' , 
             headers : { 
             Acept : 'application / json' , 
